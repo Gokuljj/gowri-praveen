@@ -9,5 +9,5 @@ Day 1
 
 2) Programming Language (Js (JavaScript Basics))
    -) Alerts & Prompts.
-   -) Variables & Datatypes
+   -) Variables (var, let, const) & Datatypes
    -) Operators - Arithmatic Operator & Logical Operator
