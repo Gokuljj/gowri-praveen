@@ -1,0 +1,130 @@
+
+/* Root variable for fonts/colors */
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --volkhov: 'Volkhov', serif;
+    --primaryOrange: #FD8D3A;
+    --secondaryOrange: #FA7436;
+    --textDark: #222222;
+    --textWhite: #FFFFFF;
+    --textGray: #666666;
+    --primarybg: #FEFCFB;
+    --secondarybg: #F7F8FC;
+}
+
+
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--poppins);
+    background-color: var(--primarybg);
+}
+
+h1,h2,h3 {
+    font-family: var(--volkhov);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* hero section styles */
+#heroSection {
+    height: 12vh;
+    width: 100%;
+}
+
+#header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menus {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo > h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 20px;
+}
+
+.menus {
+    width: 30%;
+}
+
+.menus > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menus > ul > li > a {
+    color: var(--textDark);
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+.menus > ul > li > a:hover {
+    color: var(--primaryOrange);
+}
+
+.hero-btns {
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-btns > a {
+    color: var(--primaryOrange);
+    font-weight: 600;
+    transition: 0.3s ease;
+} 
+
+.hero-btns > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.primary-btn {
+    background-color: var(--secondaryOrange);
+    padding: 5% 17%;
+    border-radius: 5px;
+    color: var(--textWhite) !important;
+    font-weight: 500 !important;
+    transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: var(--primarybg);
+    color: var(--secondaryOrange) !important;
+    text-decoration: none !important;
+}
+
